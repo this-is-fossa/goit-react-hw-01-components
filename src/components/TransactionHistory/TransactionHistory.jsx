@@ -5,11 +5,11 @@ import { Table, TableHead, HeadCaption, Caption, TableBody, BodyLine, TableData 
 export const TransactionHistory = ({ items }) => {
   return (<Table>
     <TableHead>
-    <HeadCaption>
-      <Caption>Type</Caption>
-      <Caption>Amount</Caption>
-      <Caption>Currency</Caption>
-    </HeadCaption>
+      <HeadCaption>
+        <Caption>Type</Caption>
+        <Caption>Amount</Caption>
+        <Caption>Currency</Caption>
+      </HeadCaption>
     </TableHead>
 
     <TableBody>
@@ -18,19 +18,19 @@ export const TransactionHistory = ({ items }) => {
           <TableData>{type}</TableData>
           <TableData>{amount}</TableData>
           <TableData>{currency}</TableData>
-        </BodyLine>)
+        </BodyLine>);
       })}
     </TableBody>
-  </Table>)
-}
+  </Table>);
+};
 
 TransactionHistory.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.exact( {
+    PropTypes.exact({
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
-    }, ),
+    }),
   ),
 };

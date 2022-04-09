@@ -25,7 +25,7 @@ export const Name = styled.p`
 
 export const Tag = styled.p``;
 
-export const Location =styled.p``;
+export const Location = styled.p``;
 
 export const List = styled.ul`
   display: flex;
@@ -50,9 +50,9 @@ export const Stats = styled.li`
   }
 `;
 
-export const Label =styled.span``;
+export const Label = styled.span``;
 
 export const Quantity = styled.span`
-    margin-top: 8px;
-    font-weight: bold;
+  margin-top: 8px;
+  font-weight: bold;
 `;

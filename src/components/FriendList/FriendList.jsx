@@ -8,21 +8,21 @@ export const FriendList = ({ friends }) => {
       {friends.map(({ id, avatar, name, isOnline }) => {
         return (<Item key={id}>
           <Status status={isOnline}>{isOnline}</Status>
-          <Avatar src={avatar} alt="User avatar"/>
+          <Avatar src={avatar} alt='User avatar' />
           <Name>{name}</Name>
-        </Item>)
-        })}
+        </Item>);
+      })}
     </List>
-  )
-}
+  );
+};
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
-    PropTypes.exact( {
+    PropTypes.exact({
       avatar: PropTypes.string.isRequired,
       name: PropTypes.string.isRequired,
       isOnline: PropTypes.bool.isRequired,
       id: PropTypes.number.isRequired,
-    }, ),
+    }),
   ),
 };

@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
 
 export const Table = styled.table`
-
   width: 700px;
   margin-right: auto;
   margin-left: auto;
@@ -39,6 +38,5 @@ export const TableData = styled.td`
   padding-bottom: 10px;
   text-transform: capitalize;
   border: 1px solid grey;
-
 `;
 

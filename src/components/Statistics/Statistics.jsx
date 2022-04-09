@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 import { Board, Title, List, Item, Label, Percentage } from 'components/Statistics/Statistics.styled';
-import { randomColor } from 'utils/utils'
-
+import { randomColor } from 'utils/utils';
 
 export const Statistics = ({ stats, title }) => {
 
@@ -15,18 +14,18 @@ export const Statistics = ({ stats, title }) => {
         return (<Item key={id} bgc={color}>
           <Label>{label}</Label>
           <Percentage>{percentage}%</Percentage>
-        </Item>)
+        </Item>);
       })}
     </List>
-  </Board>
-}
+  </Board>;
+};
 
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
-    PropTypes.exact( {
+    PropTypes.exact({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    }, ),
+    }),
   ),
 };
